@@ -1,6 +1,6 @@
 {
   "name": "jx-node-http",
-  "version": "0.0.10",
+  "version": "0.0.4",
   "description": "Simple Hello World that listens on localhost:8080",
   "main": "server.js",
   "scripts": {
