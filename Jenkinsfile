@@ -23,7 +23,6 @@ pipeline {
           sh "CI=true DISPLAY=:99 npm test"
           sh "export VERSION=$PREVIEW_VERSION && skaffold build -f skaffold.yaml"
 
-          sh "git checkout master"
           sh "git config --global credential.helper store"
           sh "jx step git credentials"
 
