@@ -3,22 +3,28 @@
 	<head>
 			<style>
 					h2 {
-						background-color:rgb(255, 115, 0);
+						background-color:rgb(105, 130, 153);
 					  }
 					  
-					  img {
+					img {
 						background-color:bisque;
-					  }
+					}
 					  
-					  p {
+					p {
 						background-color: #7700ff;
-					  }
+					}
+					.center {
+  						display: block;
+  						margin-left: auto;
+  						margin-right: auto;
+  						width: 20%;
+					}
 			</style>
 					
 	</head>
 	<body>
-			<img border="0" src="https://jenkins-x.io/images/logo.png" width="300" height="300" />
-			<img border="0" src="https://vke.cloud.vmware.com/assets/images/cascade-csp-service.svg" width="300" height="300" />
+			<img border="0" src="https://vke.cloud.vmware.com/assets/images/cascade-csp-service.svg" class="center"/>
+			<img border="0" src="https://jenkins-x.io/images/logo.png" class="center"/>
 			<h2>Hello express app <p><%= appname %> </p>
 				deployed by Jenkins X running on<br>
 				<p>node: <%= hostname %></p></h2>
