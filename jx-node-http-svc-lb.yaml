@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    ncp/internal_ip_for_policy: 100.64.176.1
+  creationTimestamp: 2019-03-28T11:38:26Z
+  labels:
+    run: fingonode
+  name: fingonode
+  namespace: default
+  resourceVersion: "180443"
+  selfLink: /api/v1/namespaces/default/services/fingonode
+  uid: 0044a847-514e-11e9-9b66-00505696f08d
+spec:
+  clusterIP: 10.100.200.54
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 32399
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    run: fingonode
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 172.26.176.106
+    - ip: 100.64.176.1
