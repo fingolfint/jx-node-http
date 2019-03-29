@@ -3,8 +3,8 @@
 # Declare variables to be passed into your templates.
 replicaCount: 5
 image:
-  repository: draft
-  tag: 0.0.4
+  repository: 10.0.0.88:5000/fingolfint/jx-node-http
+  tag: 0.0.11
   pullPolicy: IfNotPresent
 service:
   name: jx-node-http
