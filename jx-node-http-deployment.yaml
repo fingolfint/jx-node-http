@@ -23,7 +23,7 @@ spec:
         run: fingonode
     spec:
       containers:
-      - image: fingolfint/jx-node-http:v1
+      - image: fingolfint/jx-node-http:latest
         imagePullPolicy: IfNotPresent
         name: fingonode
         ports:
